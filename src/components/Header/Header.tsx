@@ -1,4 +1,4 @@
-import { Input } from './Form/Form';
+import { Form } from './Form/Form';
 import { User } from '../../types/Types';
 
 type Props = {
@@ -16,7 +16,7 @@ export const Header = (props: Props) => {
 
 	return (
 		<div className='flex flex-col justify-center items-center  bg-gray-700 w-full max-w-[800px] p-10'>
-			<Input onAddUser={onAddUserHandler} onValidForm={validFormHandler} />
+			<Form onAddUser={onAddUserHandler} onValidForm={validFormHandler} />
 		</div>
 	);
 };

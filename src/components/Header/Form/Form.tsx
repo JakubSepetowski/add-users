@@ -5,7 +5,7 @@ type Props = {
 	onAddUser: (user: User) => void;
 	onValidForm: (isValid: false, err: string) => void;
 };
-export const Input = (props: Props) => {
+export const Form = (props: Props) => {
 	const [userName, setUserName] = useState('');
 	const [userAge, setUserAge] = useState('');
 
